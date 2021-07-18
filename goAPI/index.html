@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice　Go API</title>
+</head>
+<body>
+<h1>書籍一覧情報</h1>
+<div></div>
+
+</body>
+</html>
+
+<script>
+    // XMLHttpRequestオブジェクトの作成
+    let request = new XMLHttpRequest();
+
+    // URLを開く
+    const URL = " http://127.0.0.1:8000/api/books"
+    request.open('GET', URL, true);
+
+    request.onload = function () {
+        console.log('送信完了')
+    }
+    request.send();
+</script>
