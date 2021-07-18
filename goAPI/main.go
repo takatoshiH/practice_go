@@ -27,7 +27,10 @@ var books []Book
 
 // GET All books
 func getBooks(w http.ResponseWriter, r *http.Request) {
+	// jsonを返します
 	w.Header().Set("Content-Type", "application/json")
+
+	// booksをjsonEncodeして返している
 	json.NewEncoder(w).Encode(books)
 }
 

@@ -213,3 +213,6 @@ type MyFloat float64
 //	f := MyFloat(-math.Sqrt2)
 //	fmt.Println(f.Abs())
 //}
+
+func (v Vertex) Abs() float64 {
+}
