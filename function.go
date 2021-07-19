@@ -18,7 +18,6 @@ func numbers() (int, int) {
 	return 10, 100
 }
 
-
 func main() {
 	sum = plus(10,10)
 	a, b = numbers()
